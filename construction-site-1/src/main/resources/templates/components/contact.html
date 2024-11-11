@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!-- Contact Section Start  -->
+<section id="contact" class="contact section-padding" th:fragment="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                    <h2>Contact Us</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur <br> adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row m-0">
+            <div class="col-md-12 p-0 pt-4 pb-4 mt-3">
+                <form th:action=@{/contact-us} method="post" class="bg-light p-4 m-auto form-left">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email"  required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <textarea name="description" rows="3" class="form-control" placeholder="Write Message" required></textarea>
+                                </div>
+                            </div>
+                            <button class="btn btn-warning btn-lg btn-block mt-3">Send Now</button>
+                        </div>
+                        <div  class="col-md-6 col-sm-12 mt-3">
+                            <div class="map_main">
+                                <div class="map-responsive">
+                                    <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="600" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

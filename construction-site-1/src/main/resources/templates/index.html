@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Construction Site</title>
+<!--    Common Css-->
+    <div th:replace="~{common :: common(~{::link})}"></div>
+</head>
+<body>
+<!-- Navbar Start -->
+<nav th:replace="~{components/navbar :: navbar}"></nav>
+
+<!-- Carousel Start -->
+<div th:replace="~{components/carousel :: carousel}"></div>
+
+<!-- About Section -->
+<section th:replace="~{components/about :: about}"></section>
+
+<!--Service Section -->
+<section th:replace="~{components/services :: services}"></section>
+
+<!--Portfolio Section -->
+<div th:replace="~{components/portfolio :: portfolio}"></div>
+
+<!--Team Section -->
+<div th:replace="~{components/team :: team}"></div>
+
+<!--Contact Section -->
+<div th:replace="~{components/contact :: contact}"></div>
+
+<!--Footer Section -->
+<div th:replace="~{components/footer :: footer}"></div>
+
+
+<!--Common Js-->
+    <div th:replace="~{common :: common_js(~{::script})}"></div>
+</body>
+</html>

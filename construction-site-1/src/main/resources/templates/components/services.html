@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!-- Service Section Start  -->
+<section id="services" class="services section-padding" th:fragment="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                    <h2>Our Services</h2>
+                    <p>Lorem ipsum, dolor sit amet <br> consectetur adipisicing.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-4 service-data" th:each="service : ${services}">
+                <div class="card  text-center bg-white pb-2">
+                    <div class="card-body text-dark">
+                        <div class="img-area mb-4">
+                            <img th:src="|data:image/jpeg;base64,${service.image}|" alt="" class="img-fluid">
+                        </div>
+                        <h3 class="card-title" th:text="${service.title}"></h3>
+                        <p class="lead" th:text="${service.description}">
+                        </p>
+                        <button class="btn bg-warning text-dark">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <!--            <div class="col-12 col-md-12 col-lg-4">-->
+            <!--                <div class="card  text-center bg-white pb-2">-->
+            <!--                    <div class="card-body text-dark">-->
+            <!--                        <div class="img-area mb-4">-->
+            <!--                            <img src="img/project-2.jpg" alt="" class="img-fluid">-->
+            <!--                        </div>-->
+            <!--                        <h3 class="card-title">Buliding Make</h3>-->
+<!--                                    <p class="lead">-->
+<!--                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quam optio magnam voluptatum non blanditiis unde qui dignissimos quas dicta? Ipsum rem facere reprehenderit fuga!-->
+<!--                                    </p>-->
+            <!--                        <button class="btn bg-warning text-dark">Learn More</button>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
+            <!--            <div class="col-12 col-md-12 col-lg-4">-->
+            <!--                <div class="card  text-center bg-white pb-2">-->
+            <!--                    <div class="card-body text-dark">-->
+            <!--                        <div class="img-area mb-4">-->
+            <!--                            <img src="img/project-3.jpg" alt="" class="img-fluid">-->
+            <!--                        </div>-->
+            <!--                        <h3 class="card-title">Buliding Make</h3>-->
+            <!--                        <p class="lead">-->
+            <!--                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quam optio magnam voluptatum non blanditiis unde qui dignissimos quas dicta? Ipsum rem facere reprehenderit fuga!-->
+            <!--                        </p>-->
+            <!--                        <button class="btn bg-warning text-dark">Learn More</button>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--            </div>-->
+        </div>
+
+<!--        <div class="row">-->
+<!--            <div class="col-12 col-md-12 col-lg-4">-->
+<!--                <div class="card text-white text-center bg-dark pb-2">-->
+<!--                    <div class="card-body">-->
+<!--                        <i class="fa-regular fa-copy"></i>-->
+<!--                        <h3 class="card-title">Best Quality</h3>-->
+<!--                        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam eaque reprehenderit necessitatibus in voluptates. Cum placeat, hic fugiat voluptates consectetur sequi quod deserunt ea?</p>-->
+<!--                        <button class="btn btn-warning text-dark">Read More</button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-12 col-lg-4">-->
+<!--                <div class="card text-white text-center bg-dark pb-2">-->
+<!--                    <div class="card-body">-->
+<!--                        <i class="fa-brands fa-slack"></i>-->
+<!--                        <h3 class="card-title">Sustainibility</h3>-->
+<!--                        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam eaque reprehenderit necessitatibus in voluptates. Cum placeat, hic fugiat voluptates consectetur sequi quod deserunt ea?</p>-->
+<!--                        <button class="btn btn-warning text-dark">Read More</button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-12 col-lg-4">-->
+<!--                <div class="card text-white text-center bg-dark pb-2">-->
+<!--                    <div class="card-body">-->
+<!--                        <i class="fa-brands fa-playstation"></i>-->
+<!--                        <h3 class="card-title">Integrity</h3>-->
+<!--                        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam eaque reprehenderit necessitatibus in voluptates. Cum placeat, hic fugiat voluptates consectetur sequi quod deserunt ea?</p>-->
+<!--                        <button class="btn btn-warning text-dark">Read More</button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+</section>
+</body>
+</html>

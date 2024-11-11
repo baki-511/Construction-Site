@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--    Common Css-->
+    <div th:replace="~{admin/admin-common :: common(~{::link})}"></div>
+</head>
+<body>
+<div th:replace="~{admin/components/menu :: menu}"></div>
+<section id="interface">
+    <div th:replace="~{admin/components/navigation :: navigation}"></div>
+    <div class="container-fluid md-mx-4">
+        <h2 class="text-center py-2 bg-light">All Projects</h2>
+        <div class="card">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr class="fs-6 py-2 bg-success text-light">
+                        <th scope="col">ID</th>
+                        <th class="text-nowrap px-2" scope="col">Name</th>
+                        <th class="text-nowrap px-2" scope="col">Email</th>
+                        <th class="px-2" scope="col">Message</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="contact : ${contacts}" class="py-3">
+                        <td class="text-nowrap px-2" th:text="${contact.contactId}"></td>
+                        <td class="text-nowrap px-2" th:text="${contact.name}"></td>
+                        <td class="text-nowrap px-2" th:text="${contact.email}"></td>
+                        <td class="px-2" th:text="${contact.message}" style="min-width:300px"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Common Js-->
+<div th:replace="~{admin/admin-common :: common_js(~{::script})}"></div>
+</body>
+</html>

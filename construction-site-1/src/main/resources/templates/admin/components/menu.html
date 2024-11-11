@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<section id="menu" th:fragment="menu">
+    <div class="logo">
+        <img src="/images/logo.jpg" alt="" />
+        <h2>Dynamic</h2>
+        <i class="fa-solid fa-bars menu-bar"></i>
+    </div>
+    <div class="items">
+        <li><i class="fa-solid fa-chart-pie"></i><a th:href=@{/admin/}>Dashbord</a></li>
+        <li><i class="fa-solid fa-chart-line"></i><a th:href=@{/admin/add-service}>Add Service</a></li>
+        <li><i class="fa-solid fa-th-large"></i><a th:href=@{/admin/add-project}>Add Project</a></li>
+        <li><i class="fa-solid fa-edit"></i><a th:href=@{/admin/all-service}>All Services</a></li>
+        <li><i class="fa-solid fa-hamburger"></i><a th:href=@{/admin/all-project}>All Projects</a></li>
+<!--        <li><i class="fa-solid fa-hamburger"></i><a href="#">Modal</a></li>-->
+        <li><i class="fa-solid fa-right-from-bracket"></i><a th:href=@{/logout}>Logout</a></li>
+    </div>
+</section>
+</body>
+</html>
